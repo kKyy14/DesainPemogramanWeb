@@ -37,6 +37,7 @@
           placeholder="Ketik judul buku..."
         />
       </div>
+      <p id="loading-indicator" style="display: none">Memuat data...</p>
       <div class="table-responsive">
         <table>
           <thead>
@@ -49,39 +50,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Laskar Pelangi</td>
-              <td>Andrea Hirata</td>
-              <td>2005</td>
-              <td>4</td>
-              <td>
-                <button type="button">Edit</button>
-                <button type="button">Detail</button>
-                <button type="button" class="btn-hapus">Hapus</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Negeri 5 Menara</td>
-              <td>Ahmad Fuadi</td>
-              <td>2009</td>
-              <td>15</td>
-              <td>
-                <button type="button">Edit</button>
-                <button type="button">Detail</button>
-                <button type="button" class="btn-hapus">Hapus</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Harry Potter dan Kamar Rahasia</td>
-              <td>J.K. Rowling</td>
-              <td>2000</td>
-              <td>9</td>
-              <td>
-                <button type="button">Edit</button>
-                <button type="button">Detail</button>
-                <button type="button" class="btn-hapus">Hapus</button>
-              </td>
-            </tr>
+            <!-- Baris diisi dinamis oleh assets/js/buku.js via fetch('../data/buku.json') -->
           </tbody>
         </table>
       </div>
@@ -90,5 +59,6 @@
       <p>© 2026 SIMPUS-Mini — Jobsheet</p>
     </footer>
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/buku.js"></script>
   </body>
 </html>
